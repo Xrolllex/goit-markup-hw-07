@@ -191,9 +191,13 @@
         outline: none;
     }
 
-    &_input:checked+&_icon {
+    &_input:hover + &_icon {
         fill: $basic-color;
     }
+
+    &_input:focus-within + &_icon {
+            fill: $basic-color
+        }
 
 }
 
